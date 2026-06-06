@@ -1,0 +1,66 @@
+
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.*
+
+# Uploads
+backend/uploads/
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# =========================
+# Node / Next.js
+# =========================
+
+frontend/node_modules/
+
+frontend/.next/
+
+frontend/out/
+
+# Vercel
+.vercel/
+
+# Build files
+dist/
+build/
+
+# =========================
+# IDE
+# =========================
+
+.vscode/
+.idea/
+
+# =========================
+# Testing
+# =========================
+
+.pytest_cache/
+.coverage
+
+# =========================
+# Misc
+# =========================
+
+*.sqlite
+*.db
+
