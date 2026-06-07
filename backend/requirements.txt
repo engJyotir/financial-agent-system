@@ -14,3 +14,7 @@ pypdf
 
 python-dotenv
 python-multipart
+
+
+pinecone
+langchain-pinecone

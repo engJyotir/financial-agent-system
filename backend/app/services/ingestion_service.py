@@ -2,8 +2,9 @@ from uuid import uuid4
 
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
-from app.services.chroma_service import ChromaService
+from app.services.pinecone_service import (
+    PineconeService
+)
 
 
 class IngestionService:
@@ -27,8 +28,7 @@ class IngestionService:
         for chunk in chunks:
             chunk.metadata["document_id"] = document_id
 
-        vector_store = ChromaService.get_vector_store()
-
+        vector_store = PineconeService.get_vector_store()
         vector_store.add_documents(chunks)
 
         return {

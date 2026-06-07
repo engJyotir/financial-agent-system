@@ -1,4 +1,6 @@
-from app.services.chroma_service import ChromaService
+from app.services.pinecone_service import (
+    PineconeService
+)
 
 
 class RetrieverService:
@@ -10,12 +12,18 @@ class RetrieverService:
         k: int = 5
     ):
 
-        vector_store = ChromaService.get_vector_store()
+        vector_store = (
+            PineconeService.get_vector_store()
+        )
 
-        return vector_store.similarity_search(
-            query=query,
-            k=k,
-            filter={
-                "document_id": document_id
-            }
+        return (
+            vector_store.similarity_search(
+                query=query,
+                k=k,
+                filter={
+                    "document_id": {
+                        "$eq": document_id
+                    }
+                }
+            )
         )

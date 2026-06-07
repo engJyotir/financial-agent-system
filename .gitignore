@@ -64,3 +64,12 @@ build/
 *.sqlite
 *.db
 
+backend/chroma_db/
+*.txt
+
+full_dump.txt
+
+backend/.env
+frontend/.env.local
+backend/chroma_db/
+full_dump.txt
