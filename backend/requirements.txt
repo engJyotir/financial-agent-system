@@ -6,15 +6,11 @@ langchain-openai
 langgraph
 
 langchain-community
-langchain-chroma
+langchain-pinecone
 
-chromadb
+pinecone
 
 pypdf
 
 python-dotenv
 python-multipart
-
-
-pinecone
-langchain-pinecone
