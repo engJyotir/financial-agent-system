@@ -65,7 +65,7 @@ build/
 *.db
 
 backend/chroma_db/
-*.txt
+
 
 full_dump.txt
 
