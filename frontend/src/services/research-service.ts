@@ -4,7 +4,7 @@ export const runResearch = async (
   documentId: string
 ) => {
   const response = await api.post(
-    "/run-research",
+    "/api/run-research",
     {
       document_id: documentId,
     }
