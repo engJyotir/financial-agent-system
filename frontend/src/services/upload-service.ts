@@ -18,7 +18,7 @@ export const uploadPdf = async (
   );
 
   const response = await api.post(
-    "/upload-pdf",
+    "/api/upload-pdf",
     formData,
     {
       headers: {
